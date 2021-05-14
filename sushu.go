@@ -6,8 +6,8 @@ import (
 )
 
 //获取100以内的素数
-func sushu(sum int) []int {
-	a := []int{}
+func suShu(sum int) []int {
+	var a []int
 	for i:=1; i<=sum; i++ {
 		if i > 1{
 			num := i / 2
@@ -32,7 +32,7 @@ func sushu(sum int) []int {
 
 func main(){
 	st := time.Now()
-	result := sushu(1000)
+	result := suShu(1000)
 	elapsed := time.Since(st)
 	fmt.Println(result)
 	fmt.Printf("耗时：%v\n", elapsed)
