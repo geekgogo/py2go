@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//获取100以内的素数
 func main(){
 	a := []int{1}
 	for i:=0; i<=100; i++ {
